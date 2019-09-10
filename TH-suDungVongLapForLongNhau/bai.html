@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script language="javascript">
+        let sout, line, column;
+        sout = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+            line = column = 1;
+        while (line <= 10) {
+            sout = sout + "<tr>";
+            while (column<= 10) {
+                sout = sout + "<td>" + line * column + "</td>";
+                column++;
+            }
+            sout = sout + "</tr>";
+            column = 1;
+            line++;
+        }
+        sout = sout + "</table>";
+        document.write(sout);
+        </script>
+</body>
+</html>
